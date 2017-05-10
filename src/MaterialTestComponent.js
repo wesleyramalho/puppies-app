@@ -10,6 +10,10 @@ const MaterialTestComponent = () => (
     title="Title"
     iconClassNameRight="muidocs-icon-navigation-expand-more"
   />
+  
+
+
+
 );
 
 export default MaterialTestComponent;
