@@ -7,13 +7,14 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router": "^4.1.1",
-    "react-tap-event-plugin": "^2.0.1"
-  },
-  "devDependencies": {
+    "react-tap-event-plugin": "^2.0.1",
     "react-scripts": "0.9.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "heroku-prebuild": "npm i serve -g",
+    "heroku-postbuild": "npm run build",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
